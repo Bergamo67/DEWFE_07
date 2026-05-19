@@ -1,0 +1,144 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: João Pedro Bergamo Cham
+
+Descrição: Formulário HTML5.
+
+Data: 06/05/2026
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <h2>Formulário de Cadastro</h2>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+                    
+                    <p>E-mai:</p>
+                    <input type="text" id="email" name="email" required minlength="3" placeholder="Seu E-mail">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações</legend>
+                    
+                    <p>Gênero</p>
+
+                    <input type="radio" name="genero" id="masc" value="masculino">
+                    <label for="masc">Masculino</label>
+
+                    <input type="radio" name="genero" id="femi" value="feminino"> 
+                    <label for="femi">Feminino</label>
+
+                    <input type="radio" name="genero" id="N-inf" value="Não-informado"> 
+                    <label for="N-inf">Não-informado</label>
+
+                    <hr>
+
+                    <p>Interesses</p>
+
+                     <input type="checkbox" name="" id="Interesses" value="Tecnologia">
+                    <label for="tecl">Tecnologia</label>
+
+                    <input type="checkbox" name="Interesses" id="femi" value="Esportes"> 
+                    <label for="Espt">Esportes</label>
+
+                    <input type="checkbox" name="Interesses" id="Músic" value="Músicas"> 
+                    <label for="Músic">Músicas</label>
+                    
+                    <input type="checkbox" name="Interesses" id="jogs" value="Jogos"> 
+                    <label for="jogs">Jogos</label>
+
+                    <hr>
+
+                    <p>Estado</p>
+                    <select name="Estado" id="">Estado
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="BH">Bahia</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Santa Catarina</option>
+                    </select>
+                    
+                    <hr>
+
+                    <p>Mensagem</p> 
+                    
+                 <textarea name="Mensagem" id=""></textarea>
+                
+                <br><br>
+
+                    <p>Upload de imagem</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <label for="arquivo">Selecione uma imagem:</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".png, .jpeg" required>
+                        <br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                    
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
